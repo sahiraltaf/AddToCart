@@ -1,6 +1,7 @@
 @extends('layout')
    
 @section('content') 
+
 <div class="row mt-4">
     @foreach($products as $product)
         <div class="col-md-3">

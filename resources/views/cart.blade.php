@@ -44,7 +44,8 @@
         <tr>
             <td colspan="5" class="text-right">
                 <a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a>
-                <button class="btn btn-success">Checkout</button>
+                <a href="{{ route('stripe.checkout', ['price' => $total, 'product' => $details['name']]) }}" class="btn btn-success"><i class="fa fa-angle-left"></i> Checkout</a>
+
             </td>
         </tr>
     </tfoot>
